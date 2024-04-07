@@ -1,0 +1,202 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Estilos específicos */
+
+header {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 100px;
+  padding-left: 20px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+}
+
+.login-button {
+  margin-left: 20px; /* Espaçamento entre o menu e o botão de login */
+  margin-right: 20px; /* Espaçamento entre o botão de login e a borda direita */
+}
+
+#inscreva-se-btn {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#inscreva-se-btn:hover {
+  background-color: darkgreen;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+aside {
+  flex: 1;
+  padding-right: 20px;
+  margin-left: 150px; /* Adiciona uma margem à esquerda */
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  color: rgba(1, 118, 211, 1);
+  text-align: center; 
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+article {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imghome {
+  border-radius: 18px;
+  max-width: 60%;
+  height: auto;
+}
+
+/* Estilos para o rodapé */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: rgba(1, 118, 211, 1);
+  color: white;
+}
+
+.primary-heading {
+  font-size: clamp(2rem, 3vw, 3rem);
+  color: blue;
+  max-width: 600px;
+}
+
+.home-text-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.primary-text {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  max-width: 500px;
+  color: black;
+  margin: 1.5rem 0rem;
+}
+
+.about-section-container {
+  margin-top: 20rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-section-text-container {
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-subheading {
+  font-weight: 700;
+  color: #fe9e0d;
+  font-size: 1.15rem;
+}
+
+/* Estilo CSS */
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  margin-right: 20px;
+}
+
+.lupa-image {
+  align-self: flex-end; /* Posiciona a lupa à direita */
+  width: 150px; /* Ajuste conforme necessário */
+  height: auto; /* Mantenha a proporção */
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .logo img {
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  .menu {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .menu a {
+    margin: 10px 0;
+  }
+  .login-button {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  aside {
+    margin-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+  .primary-heading {
+    font-size: 2rem;
+  }
+  .primary-text {
+    font-size: 1rem;
+  }
+  .imghome {
+    max-width: 100%;
+  }
+}
